@@ -39,23 +39,3 @@ function """+ functionName + r"""(college) {
 }
     """
     return function
-
-
-if __name__ == '__main__':
-
-    cost = {
-        "tuition": "tuition.out_of_state",
-        "stateTuition": "tuition.in_state", 
-        "bookCost": "booksupply",
-        "campusRoomBoard": "roomboard.oncampus",
-        "campusFees": "other.expense.oncampus",
-    }
-    aid = {
-        "aid": "loan_principal"
-    }
-
-    with open('programs.txt', 'w') as f:
-        for key in cost:
-            f.write(makeFunction(key, 'latest.cost.'+cost[key]))
-        for key in aid:
-            f.write(makeFunction(key, 'latest.aid.'+aid[key]))
