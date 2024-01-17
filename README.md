@@ -10,12 +10,9 @@ Google Sheets allows users to define their own functions with JavaScript via App
 
 ### Dependencies
 
-* At least Python3
-* An IDE such as VSCode or IDLE
+* Python >= 3
 
 ### Installation
-
-#### Step 2: Create custom functions with `makeJScode.py`
 
 * Clone this repository 
 ```
